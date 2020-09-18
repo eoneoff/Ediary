@@ -1,0 +1,1 @@
+**This is an attempt to make an electronic diary system for my son's school**

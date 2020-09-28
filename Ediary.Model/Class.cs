@@ -9,8 +9,6 @@ namespace Ediary.Model
 
         [Required]
         public int Grade {get; set;}
-
-
         public string Letter {get; set;}
 
         [Required]

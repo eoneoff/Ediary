@@ -1,11 +1,9 @@
 pipeline{
-    agent{
-        label "node"
-    }
+    agent any
     stages{
         stage("compile"){
             steps{
-                dotnet build
+                echo "Compiling"
             }
             post{
                 success{
@@ -18,7 +16,7 @@ pipeline{
         }
         stage("test") {
             steps {
-                dotnet test "Ediary.Tests/Ediary.Tests.csproj"
+                echo "testing"
             }
         }
     }

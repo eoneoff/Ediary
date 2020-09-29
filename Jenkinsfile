@@ -18,7 +18,7 @@ pipeline{
         }
         stage("test") {
             steps {
-                dotnet test Ediary.Tests/Ediary.Tests.csproj
+                dotnet test "Ediary.Tests/Ediary.Tests.csproj"
             }
         }
     }

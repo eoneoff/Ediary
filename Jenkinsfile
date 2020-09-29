@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("compile"){
             steps{
-                echo "Compiling"
+                sh 'dotnet build'
             }
             post{
                 success{
@@ -16,7 +16,7 @@ pipeline{
         }
         stage("test") {
             steps {
-                echo "testing"
+                sh 'dotnet test Ediary.Tests/Ediary.Tests.csproj'
             }
         }
     }

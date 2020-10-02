@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Ediary.Model
@@ -8,5 +9,9 @@ namespace Ediary.Model
 
         [Required]
         public string Name {get; set;}
+
+        public virtual ICollection<ScheduleRecord> ScheduleRecords {get; set;}
+        public virtual ICollection<Lesson> Lessons {get; set;}
+        public virtual ICollection<HomeTask> HomeTasks {get; set;}
     }
 }

@@ -16,6 +16,6 @@ namespace Ediary.Model
 
         public virtual ICollection<Student> Students {get; set;}
         public virtual Teacher ClassMaster {get; set;}
-
+        public virtual ICollection<Diary> Diaries {get; set;}
     }
 }
